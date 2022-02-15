@@ -90,6 +90,7 @@ const List = (props)=>{
                       <ListItem 
                         key={d.numero}
                         numero={d.numero}
+                        data={d.date}
                         nome={d.nome}
                         cognome={d.cognome}
                         nomeAzienda={d.nomeAzienda}
@@ -99,6 +100,7 @@ const List = (props)=>{
                         mail={d.mail}
                         quantità={d.quantità}
                         misura={d.misura}
+                        battistrada={d.battistrada}
                         marca={d.marca}
                         cerchi={d.cerchi}
                         onRemove={deleteItemHandler}

@@ -29,6 +29,7 @@ const ListItem = (props)=>{
                             <h3 style={{padding:'16px 0 0 8px'}}>Anagrafica cliente:</h3>
                             <ul style={{padding:'0px 0 0 8px'}}>
                                 <li><b>Codice Deposito:</b> {props.numero}</li>
+                                <li><b>Data deposito:</b>{props.data}</li>
                                 <li><b>Nome:</b> {props.nome}</li>
                                 <li><b>Cognome:</b> {props.cognome}</li>
                                 <li><b>Nome Azienda:</b> {props.nomeAzienda}</li>
@@ -44,12 +45,13 @@ const ListItem = (props)=>{
                             <ul style={{padding:'0px 0 0 8px'}} >
                                 <li> <b>Quantità:</b> {props.quantità}</li>
                                 <li> <b>Misura:</b> {props.misura}</li>
+                                <li> <b>Battistrada residuo (mm):</b> {props.battistrada}</li>
                                 <li><b>Marca:</b> {props.marca}</li>
                                 <li><b>Cerchi:</b> {cerchi }</li>
                                 
                             </ul>
                             <Button type='primary' style={{margin:'8px'}}>Modifica</Button>
-                            <Link to={'/lavorazione?id=' + props.numero}>Stampa</Link>
+                            <Link to={'/lavorazione?id=' + props.numero} style={{margin:'8px'}}>Stampa</Link>
                             
                         </Col>
                     </Row>

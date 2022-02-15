@@ -48,6 +48,7 @@ const ItemView = (props)=>{
                             <h3 style={{padding:'16px 0 0 8px'}}>Anagrafica cliente:</h3>
                             <ul style={{listStyleType:'none', padding:'0px 0 0 8px'}}>
                                 <li><b>Codice Deposito:</b> {data.numero}</li>
+                                <li><b>Data deposito</b> {data.date}</li>
                                 <li><b>Nome:</b> {data.nome}</li>
                                 <li><b>Cognome:</b> {data.cognome}</li>
                                 <li><b>Nome Azienda:</b> {data.nomeAzienda}</li>
@@ -63,6 +64,7 @@ const ItemView = (props)=>{
                             <ul style={{listStyleType:'none', padding:'0px 0 0 8px'}}>
                             <li> <b>Quantità:</b> {data.quantità}</li>
                                 <li> <b>Misura:</b> {data.misura}</li>
+                                <li> <b>Battistrada residuo (mm):</b> {data.battistrada}</li>
                                 <li><b>Marca:</b> {data.marca}</li>
                                 <li><b>Cerchi:</b> {data.cerchi }</li>
                                 <br></br>
